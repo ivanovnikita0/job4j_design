@@ -46,9 +46,9 @@ class SimpleConvertTest {
     @Test
     void checkMap() {
         SimpleConvert simpleConvert = new SimpleConvert();
-        Map<String, Integer> map = simpleConvert.toMap("first", "second", "three","four", "five");
+        Map<String, Integer> map = simpleConvert.toMap("first", "second", "three", "four", "five");
         assertThat(map).isNotEmpty()
-                .containsKeys("first", "second", "three","four", "five")
+                .containsKeys("first", "second", "three", "four", "five")
                 .containsValues(0, 1, 2, 3, 4);
 
     }
